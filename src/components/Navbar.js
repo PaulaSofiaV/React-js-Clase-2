@@ -1,13 +1,17 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import logo from "./intento-de-logo.jpg"
+import Carrito from "CarWidget.js";
+import imagen from './107831.png'; 
+import Numero from "./ItemListContainer.js";
 
 const Navbar = () => {
     return (
         <div className="navbar">
             <nav className="navbar">
                 <div className="container-fluid">
-                    <a className="navbar-brand text-white" href="#">
-                        <img src="./intento-de-logo.jpg" alt="" width="30" height="24" className="d-inline-block align-text-top"/>
-                        Luna de Sofia
+                    <a className="navbar-brand text-white fs-2" href="#">
+                    <img src={logo} alt="" width="100" height="100" className="d-inline-block align-text-center"/>
+                        Diseño textil
                     </a>
                 </div>
             </nav>
@@ -28,11 +32,16 @@ const Navbar = () => {
                         </div>
                     </div>
                 </nav>
+                <Carrito imagen={imagen}/>
             </div>
-
+            <h3>LUNA DE SOFIA</h3> 
         </div>
 
     );
 }
 
+
+const ItemListContainer = () => {
+    <Numero cantidad="3" />
+}
 export default Navbar;
