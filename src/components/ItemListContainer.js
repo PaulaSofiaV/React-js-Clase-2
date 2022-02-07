@@ -2,7 +2,7 @@
 const Numero = (props) => {
     return (
         <>
-            <p>{props.cantidad}</p>
+            <p className="numCarrito">{props.cantidad}</p>
         </>
     );
 }
