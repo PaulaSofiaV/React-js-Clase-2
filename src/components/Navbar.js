@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from "./intento-de-logo.jpg"
 import Carrito from "./CartWidget.js";
 import imagen from './107831.png'; 
-import Numero from "./ItemListContainer.js";
+
 
 
 const Navbar = () => {
@@ -36,17 +36,13 @@ const Navbar = () => {
             </div>
                
                     <div className="d-flex flex-row">
-                        <Carrito imagen={imagen}/>
-                        <Numero cantidad="3"/>
+                        <Carrito imagen={imagen}/> 
+                        
                     </div>
-               
+
         </div>
 
     );
 }
 
-
-const ItemListContainer = () => {
-    <Numero cantidad="3" />
-}
 export default Navbar;

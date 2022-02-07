@@ -1,5 +1,5 @@
 
-const Numero = (props) => {
+const ItemListContainer = (props) => {
     return (
         <>
             <p className="numCarrito">{props.cantidad}</p>
@@ -7,4 +7,4 @@ const Numero = (props) => {
     );
 }
 
-export default Numero;
+export default ItemListContainer;

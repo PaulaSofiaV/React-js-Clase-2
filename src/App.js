@@ -1,17 +1,18 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar.js';
-import Numero from './components/ItemListContainer.js';
+import ItemListContainer from './components/ItemListContainer.js';
 
 function App() {
   return (
     <div>
       <Navbar />
-      <Numero />
-    
+      <ItemListContainer cantidad="hola" />
     
     </div>
   );
 }
+
+
 
 export default App;
