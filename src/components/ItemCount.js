@@ -23,6 +23,11 @@ const ItemCount = (props) => {
             setIncremento(incremento-1)
         }
 
+        const Add = () =>{
+            alert("Agregaste ${incremento} unidades al Carrito");
+            setIncremento(props.initial);
+        }
+
     return (
         <div>
             <p className="text-center fs-3">Almohadon</p>
@@ -32,7 +37,7 @@ const ItemCount = (props) => {
                 <p className="incremento">{incremento}</p>
                 <button onClick={mas} type="button" className="btn btn-success m-3">+</button>
                 <hr/>
-                <button type="button" class="btn btn-primary">Añadir al Carrito</button>
+                <button onClick={Add} type="button" class="btn btn-primary">Añadir al Carrito</button>
             </div>
             
         </div>
