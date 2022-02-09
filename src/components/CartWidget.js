@@ -1,5 +1,3 @@
-import imagen from './107831.png'; 
-
 
 function Carrito(props) {
     return (
