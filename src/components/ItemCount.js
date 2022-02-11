@@ -4,7 +4,7 @@ const ItemCount = (props) => {
 
         let stock = 5;
         let initial = 0;
-        let onAdd = 5;
+        
 
 
 
@@ -23,7 +23,7 @@ const ItemCount = (props) => {
             setIncremento(incremento-1)
         }
 
-        const Add = () =>{
+        const onAdd = () =>{
             alert("Agregaste ${incremento} unidades al Carrito");
             setIncremento(props.initial);
         }
@@ -37,7 +37,7 @@ const ItemCount = (props) => {
                 <p className="incremento">{incremento}</p>
                 <button onClick={mas} type="button" className="btn btn-success m-3">+</button>
                 <hr/>
-                <button onClick={Add} type="button" class="btn btn-primary">Añadir al Carrito</button>
+                <button onClick={onAdd} type="button" class="btn btn-primary">Añadir al Carrito</button>
             </div>
             
         </div>

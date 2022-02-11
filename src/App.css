@@ -13,6 +13,8 @@
   }
 }
 
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -62,4 +64,8 @@
   color: #ffffff;
   width: 30px;
   height: 30px;
+}
+
+.card1 {
+  background-color: aqua;
 }

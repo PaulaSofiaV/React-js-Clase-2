@@ -3,6 +3,8 @@ import './App.css';
 import Navbar from './components/Navbar.js';
 import ItemListContainer from './components/ItemListContainer.js';
 import ItemCount from './components/ItemCount.js';
+import Item from './components/Item';
+
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <Navbar />
       <ItemListContainer cantidad="hola" />
       <ItemCount />
+      <Item />
+ 
     
     </div>
   );
