@@ -3,11 +3,9 @@ import { useState } from "react";
 const ItemCount = (props) => {
 
         let stock = 5;
-        let initial = 0;
+        let initial = 1;
+
         
-
-
-
         const [incremento, setIncremento] = useState (stock); //HOOKs para crear los estados de los componentes
         
 
@@ -23,10 +21,17 @@ const ItemCount = (props) => {
             setIncremento(incremento-1)
         }
 
-        const onAdd = () =>{
-            alert("Agregaste ${incremento} unidades al Carrito");
-            setIncremento(props.initial);
+        const onAdd = () => {
+            if (incremento >= stock) {
+                alert("lo siento, no hay stock")
+            } else {
+                alert(props.add)
+            }
         }
+      
+            
+// alert(props.add);
+//  setIncremento(props.initial);
 
     return (
         <div>

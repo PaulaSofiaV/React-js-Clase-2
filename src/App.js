@@ -11,8 +11,8 @@ function App() {
     <div>
       <Navbar />
       <ItemListContainer cantidad="hola" />
-      <ItemCount />
-      <Item />
+      <ItemCount add="Agregaste ${incremento} unidades al Carrito"/>
+   
  
     
     </div>
