@@ -42,7 +42,7 @@ const ItemCount = (props) => {
                 <p className="incremento">{incremento}</p>
                 <button onClick={mas} type="button" className="btn btn-success m-3">+</button>
                 <hr/>
-                <button onClick={onAdd} type="button" class="btn btn-primary">Añadir al Carrito</button>
+                <button onClick={onAdd} type="button" className="btn btn-primary">Añadir al Carrito</button>
             </div>
             
         </div>

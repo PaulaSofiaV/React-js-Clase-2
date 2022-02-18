@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-image: url(./components/9916513.jpg);
 }
 
 .App-logo {
@@ -27,7 +28,7 @@
 }
 
 .App-link {
-  color: #ffffff;
+  background-image: url(./components/9916513.jpg);
 }
 
 @keyframes App-logo-spin {
@@ -38,6 +39,8 @@
     transform: rotate(360deg);
   }
 }
+
+
 
 .navbar{
   background: black;

@@ -1,14 +1,16 @@
 import { customFetch } from '../components/customFetch';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import ItemDetail from '../components/ItemDetail';
 
 
 
+const {Item} = require("../components/Item.js")
 
-const {ItemDetail} = require("../components/ItemDetail.js")
-
-function ItemDetailContainer() {
+const ItemDetailContainer = () => {
     const [products, setProducts] = useState([]);
+    
+
 
     //componentDidMount - useEffect tenerlo en cuenta para no ejecutar dos veces
 
@@ -22,12 +24,20 @@ function ItemDetailContainer() {
 
         return (
             <>
-            
-
-            <div>{products.map(item => <li>{item.name}</li>)} </div>
-            
+               
+                    <ItemDetail 
+                      id={products.id}
+                      name={products.name}
+                      image={products.image}
+                      cost={products.cost}
+                   
+                      />
+               
+                    
+             
+                
             </>
-        )
+        );
 }
 
 export default ItemDetailContainer;
