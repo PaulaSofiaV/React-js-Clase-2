@@ -1,12 +1,12 @@
 let todoBien = true;
 
 
-export const customFetch = (timeout, task) => {
+export const customFetch = (timeout, data) => {
     return new Promise ((resolve, reject) => {
         setTimeout(() => {
 
             if (todoBien) {
-                resolve(task);
+                resolve(data);
             }else{
                 reject("todoMal");
             }

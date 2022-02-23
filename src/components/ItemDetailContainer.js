@@ -1,39 +1,35 @@
-import { customFetch } from '../components/customFetch';
 import { useState } from 'react';
+import { useParams } from "react-router";
 import { useEffect } from 'react';
+import { customFetch } from '../components/customFetch';
 import ItemDetail from '../components/ItemDetail';
 
 
-
-const {Item} = require("../components/Item.js")
+const { catalogo } = require("../components/catalogo.js");
 
 const ItemDetailContainer = () => {
-    const [products, setProducts] = useState([]);
+  const [dato, setDato] = useState([]);
     
 
+  
 
     //componentDidMount - useEffect tenerlo en cuenta para no ejecutar dos veces
 
     useEffect(() => {
+      customFetch(3000, catalogo[0])
+      .then(result => setDato(result))
+      .catch(error => console.log(error))
 
-        customFetch(3000, ItemDetail)
-          .then(response => setProducts(response))
-          .catch(error => setProducts(error))
-      
-        }, [])
+    }, []);
 
         return (
             <>
                
                     <ItemDetail 
-                      id={products.id}
-                      name={products.name}
-                      image={products.image}
-                      cost={products.cost}
+                      item={dato}
                    
                       />
-               
-                    
+                      
              
                 
             </>
@@ -41,4 +37,3 @@ const ItemDetailContainer = () => {
 }
 
 export default ItemDetailContainer;
-

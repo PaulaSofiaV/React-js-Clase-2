@@ -1,5 +1,5 @@
 import Items from "./Item";
-import data from "./catalogo";
+import data from "./utils/catalogo";
     
 const ItemList = () => {
     return (
