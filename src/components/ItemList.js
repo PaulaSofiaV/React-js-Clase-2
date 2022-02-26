@@ -1,17 +1,18 @@
 import Items from "./Item";
-import data from "./utils/catalogo";
+import data from "../utils/catalogo";
     
-const ItemList = () => {
+const ItemList = ({items}) => {
     return (
         <>
-        
+        {items.map((producto) =>
         <Items 
-            id={data[0].id}
-            title={data[0].title}
-            price={data[0].price}
-            pictureUrl={data[0].pictureUrl}
-            
+            id={producto.id}
+            title={producto.title}
+            cost={producto.cost}
+            image={producto.image}
+            key={producto.id}
         />
+        ) }
         </>
     );
 }

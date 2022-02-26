@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import { useParams } from "react-router";
 import { useState } from "react";
 import ItemList from "./ItemList.js";
-import { customFetch } from './utils/customFetch';
+import { customFetch } from '../utils/customFetch';
+import catalogo from "../utils/catalogo";
 
-const { catalogo } = require("./utils/catalogo.js");
 
 
 const ItemListContainer = () => {
@@ -12,11 +12,11 @@ const ItemListContainer = () => {
     const[datos, setDatos] = useState([]);
     const {idCategory} = useParams();
 
-    console.log(idCategory);
+   
 
     useEffect(() => {
         if(idCategory === undefined) {
-            customFetch(2000, catalogo[0])
+            customFetch(2000, catalogo)
                 .then(result => setDatos(result))
                 .catch(error => console.log(error))
         }else {
@@ -30,7 +30,7 @@ const ItemListContainer = () => {
     return (
         <>
             <ItemList items={datos} />
-            
+            <p>Paula</p>
         </>
    
     );

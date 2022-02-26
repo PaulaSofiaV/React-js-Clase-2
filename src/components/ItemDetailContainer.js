@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import { useEffect } from 'react';
-import { customFetch } from '../components/customFetch';
+import { customFetch } from '../utils/customFetch';
 import ItemDetail from '../components/ItemDetail';
+import catalogo from "../utils/catalogo";
 
 
-const { catalogo } = require("../components/catalogo.js");
 
 const ItemDetailContainer = () => {
   const [dato, setDato] = useState([]);

@@ -17,7 +17,7 @@ function App() {
       
       <ItemListContainer cantidad="hola" />
       <ItemCount add="Agregaste ${incremento} unidades al Carrito"/>
-      <ItemDetailContainer />
+      
       
 
       
