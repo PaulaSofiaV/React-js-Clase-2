@@ -2,7 +2,7 @@ const catalogo = [
     {
       id: "001",
       name: "Alm 40 x 40 cm ",
-      stock: "10",
+      stock: 10,
       cost: "800",
       description: "Almohadon relleno de vellon siliconado con funda sublimada y desmontable",
       image: 
@@ -16,7 +16,7 @@ const catalogo = [
     {
       id: "002",
       name: "Llavero personalziado",
-      stock: "8",
+      stock: 8,
       cost: "300",
       description: "Llavero de 15 cm. sublimado",
       image: 
@@ -30,7 +30,7 @@ const catalogo = [
     {
       id: "003",
       name: "Barbijo",
-      stock: "15",
+      stock: 15,
       cost: "250",
       description: "Barbijo con triple capa de tela, sublimado, personalizado",
       image: 
@@ -44,7 +44,7 @@ const catalogo = [
     {
       id: "004",
       name: "Taza de ceramica",
-      stock: "5",
+      stock: 5,
       cost: "900",
       description: "Taza de ceramica importada sublimada",
       image: 
@@ -58,7 +58,7 @@ const catalogo = [
     {
       id: "005",
       name: "Taza plastica",
-      stock: "10",
+      stock: 10,
       cost: "400",
       description: "Taza de material de polimero sublimada",
       image: 

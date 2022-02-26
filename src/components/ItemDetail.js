@@ -1,27 +1,30 @@
+import ItemCount from "./ItemCount";
 
 
-
-const catalogo = (props) => {
-     
+const ItemDetail = ({item}) => {
+    const onAdd = (contador) => {
+        alert(contador)
+    }
      
      return (
           <>
           <div className="card1">
-                <div className="card" style="width: 18rem;">
-                    <img src={props.image} className="card-img-top" alt="imagen de almohadon logo cobra kai"/>
+                <div className="card">
+                    <img src={item.image} className="card-img-top" alt="imagen de almohadon logo cobra kai"/>
                         <div className="card-body">
-                            <h5 className="card-title">{props.title}</h5>
-                            <p className="card-text">Precio: {props.cost}</p>
-                            <a href="#" className="btn btn-primary">id: {props.id}</a>
+                            <h5 className="card-title">{item.title}</h5>
+                            <p className="card-text">Precio: {item.cost}</p>
+                            <a href="#" className="btn btn-primary">id: {item.id}</a>
                         </div>
                 </div>
 
             </div>
+            <ItemCount stock={item.stock} initial={1} onAdd={onAdd}/>
           </>
      )
 }
 
-export default catalogo;
+export default ItemDetail;
 
 
 

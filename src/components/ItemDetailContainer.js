@@ -9,26 +9,25 @@ import catalogo from "../utils/catalogo";
 
 const ItemDetailContainer = () => {
   const [dato, setDato] = useState([]);
-    
+  const[cargando, setCargando] = useState(false);
 
   
 
     //componentDidMount - useEffect tenerlo en cuenta para no ejecutar dos veces
 
     useEffect(() => {
+      setCargando(true)
       customFetch(3000, catalogo[0])
       .then(result => setDato(result))
       .catch(error => console.log(error))
+      .finally(() => setCargando(false))
 
     }, []);
 
         return (
             <>
-               
-                    <ItemDetail 
-                      item={dato}
-                   
-                      />
+               {cargando?  <p>Cargando</p> : <ItemDetail item={dato}/> }
+                    
                       
              
                 

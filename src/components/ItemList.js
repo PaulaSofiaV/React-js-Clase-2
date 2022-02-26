@@ -1,5 +1,5 @@
 import Items from "./Item";
-import data from "../utils/catalogo";
+
     
 const ItemList = ({items}) => {
     return (
@@ -7,7 +7,7 @@ const ItemList = ({items}) => {
         {items.map((producto) =>
         <Items 
             id={producto.id}
-            title={producto.title}
+            title={producto.name}
             cost={producto.cost}
             image={producto.image}
             key={producto.id}

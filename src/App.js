@@ -16,8 +16,8 @@ function App() {
       <Navbar />
       
       <ItemListContainer cantidad="hola" />
-      <ItemCount add="Agregaste ${incremento} unidades al Carrito"/>
       
+      <ItemDetailContainer />
       
 
       
