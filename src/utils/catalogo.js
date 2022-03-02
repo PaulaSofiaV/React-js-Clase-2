@@ -6,7 +6,7 @@ const catalogo = [
       cost: "800",
       description: "Almohadon relleno de vellon siliconado con funda sublimada y desmontable",
       image: 
-        "https://scontent.faep14-2.fna.fbcdn.net/v/t39.30808-6/262512373_1320127188446431_6817021619336222248_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=a26aad&_nc_eui2=AeG6MpRrb9s_njllJNF-B8tk42siR-PQNHbjayJH49A0dgcS2mFcoJYrlTOvuOCjEZiWqIz-Vqrjr5IGayxib11G&_nc_ohc=IFu48p-IhQUAX89__uG&_nc_ht=scontent.faep14-2.fna&oh=00_AT-vNeDVy2wIpiAphoAplUpV7YV4jFe4P06QgeUOj6fqMQ&oe=621160F5"
+        "https://scontent.faep14-2.fna.fbcdn.net/v/t39.30808-6/271656896_1348107075648442_7479552934836786311_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=a26aad&_nc_eui2=AeHAlqNG2IgOFJ5UcXUwwdb4H18SMRqh7TwfXxIxGqHtPBHg0SmjZthIGDPktBPaR6-q2Mpge_y0lnhEnHnI-JaL&_nc_ohc=z7LkQU36GBIAX9Z2Mbp&_nc_ht=scontent.faep14-2.fna&oh=00_AT-MCDiKUbSEBUfo7qq0eLyGG4dgsCV8UZjo4rilKf19ZA&oe=62233EBA"
       ,
       category: {
         name: "Textil",
@@ -20,7 +20,7 @@ const catalogo = [
       cost: "300",
       description: "Llavero de 15 cm. sublimado",
       image: 
-        "https://scontent.faep14-2.fna.fbcdn.net/v/t39.30808-6/230918711_1243147456144405_5021826616235738699_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=a26aad&_nc_eui2=AeFQfhifCNzK5a7qddDLEcK8k5RI2gzR5dqTlEjaDNHl2tKzdstkk4N1jdWH9uP9I5DutLHwu5OkMsctSmwFKpg9&_nc_ohc=HuDq_6FDxp4AX8QS77E&tn=EkaajnjXjd5RxdXf&_nc_ht=scontent.faep14-2.fna&oh=00_AT8xJ4VEnwORvsSI3-8L0BEVi4-dst8zWON7t8hHoXiCAA&oe=62120A28"
+        "https://scontent.faep14-2.fna.fbcdn.net/v/t39.30808-6/230918711_1243147456144405_5021826616235738699_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=a26aad&_nc_eui2=AeFQfhifCNzK5a7qddDLEcK8k5RI2gzR5dqTlEjaDNHl2tKzdstkk4N1jdWH9uP9I5DutLHwu5OkMsctSmwFKpg9&_nc_ohc=p0KAX20wuK4AX_ijrsl&tn=EkaajnjXjd5RxdXf&_nc_ht=scontent.faep14-2.fna&oh=00_AT-Doo0AET9CWiy98Kq7ej4kFoO7sKaQ9nmfm3103f3BMQ&oe=6223D668"
       ,
       category: {
         name: "Textil",

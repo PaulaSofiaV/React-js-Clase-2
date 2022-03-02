@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from "./intento-de-logo.jpg"
 import Carrito from "./CartWidget.js";
 import imagen from './107831.png'; 
-
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -25,6 +25,7 @@ const Navbar = () => {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div className="navbar-nav">
+                               
                                 <a className="nav-link active text-white" aria-current="page" href="#">Almohadones</a>
                                 <a className="nav-link text-white" href="#">Cartucheras</a>
                                 <a className="nav-link text-white" href="#">Llaveros</a>

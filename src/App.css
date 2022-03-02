@@ -27,9 +27,7 @@
   color: white;
 }
 
-.App-link {
-  background-image: url(./components/9916513.jpg);
-}
+
 
 @keyframes App-logo-spin {
   from {
@@ -70,5 +68,13 @@
 }
 
 .card1 {
-  background-color: aqua;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white
+}
+
+.itemCount {
+  background-color: black;
 }
