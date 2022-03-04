@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import { customFetch } from '../utils/customFetch';
 import ItemDetail from '../components/ItemDetail';
 import catalogo from "../utils/catalogo";
-
+import ItemCount from './ItemCount';
 
 
 const ItemDetailContainer = () => {
@@ -27,7 +27,7 @@ const ItemDetailContainer = () => {
         return (
             <>
                {cargando?  <p>Cargando</p> : <ItemDetail item={dato}/> }
-                    
+             
                       
              
                 

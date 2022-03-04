@@ -4,7 +4,7 @@ import { useState } from "react";
 import ItemList from "./ItemList.js";
 import { customFetch } from '../utils/customFetch';
 import catalogo from "../utils/catalogo";
-
+import ItemCount from "./ItemCount.js";
 
 
 const ItemListContainer = () => {
@@ -37,7 +37,7 @@ const ItemListContainer = () => {
             
             {cargando?  <p>Cargando</p> : <ItemList items={datos} />}
             
-            
+            <ItemCount />
             
         </>
    

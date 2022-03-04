@@ -29,14 +29,14 @@ const ItemCount = ({initial, stock, onAdd}) => {
 
     return (
         <div className="container-fluid">
-            <div className="">
+            <div className="itemCount">
         
                 <div className="btn p-3 d-flex flex-row justify-content-center align-items-center" role="group" aria-label="Basic mixed styles example">
                     <button onClick={menos} type="button" className="btn btn-outline-danger m-3">-</button>
                     <p className="incremento">{contador}</p>
                     <button onClick={mas} type="button" className="btn btn-outline-success m-3">+</button>
                     <hr/>
-                    <button onClick={() => onAdd(contador)} type="button" className="btn btn-outline-dark">Añadir al Carrito</button>
+                    <button onClick={() => onAdd(contador)} type="button" className="btn btn-outline-light">Añadir al Carrito</button>
                 </div>
             </div>
         </div>

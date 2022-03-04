@@ -3,14 +3,15 @@ import logo from "./intento-de-logo.jpg"
 import Carrito from "./CartWidget.js";
 import imagen from './107831.png'; 
 import { Link } from 'react-router-dom';
+import SearchForm from './SearchForm';
 
 
 const Navbar = () => {
     return (
-        <div className="navbar">
-            <nav className="navbar">
+        <div className="navbar" position="relative">
+            <nav className="navbar" >
                 <div className="container-fluid">
-                    <a className="navbar-brand text-white fs-2" href="#">
+                    <a className="navbar-brand text-white fs-2">
                     <img src={logo} alt="" width="100" height="100" className="d-inline-block align-text-center "/>
                         Diseño textil
                     </a>
@@ -25,11 +26,11 @@ const Navbar = () => {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div className="navbar-nav">
-                               
-                                <a className="nav-link active text-white" aria-current="page" href="#">Almohadones</a>
-                                <a className="nav-link text-white" href="#">Cartucheras</a>
-                                <a className="nav-link text-white" href="#">Llaveros</a>
-                                <a className="nav-link text-white" href="#">Barbijos</a>
+                               <Link to="/category/1" style={{textDecotion: "none", color: "white", margin:"10px"}}>Almohadones</Link>
+                               <Link to="/category/1" style={{textDecotion: "none", color: "white", margin:"10px"}}>Llaveros</Link>
+                               <Link to="/category/1" style={{textDecotion: "none", color: "white", margin:"10px"}}>Barbijos</Link>
+                               <Link to="/category/1" style={{textDecotion: "none", color: "white", margin:"10px"}}>Tazas</Link>
+                                <SearchForm />
                             </div>
                         </div>
                     </div>
