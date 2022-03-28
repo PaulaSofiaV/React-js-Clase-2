@@ -1,4 +1,44 @@
+import { Badge } from '@material-ui/core';
+import { ShoppingCartOutlined } from '@material-ui/icons';
+import { CartContext } from './CartContext';
+import { useContext } from 'react';
 
+const CartWidget = (props) => {
+     const cartList = useContext(CartContext);
+ 
+  
+
+     return (
+          <>
+         <Badge badgeContent={4} color="light">
+
+               <ShoppingCartOutlined />
+          </Badge>
+          </>
+     );
+}
+
+export default CartWidget;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 function Carrito(props) {
     return (
         <>
@@ -8,3 +48,4 @@ function Carrito(props) {
 }
 
 export default Carrito;
+*/
